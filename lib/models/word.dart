@@ -13,7 +13,7 @@ class Word {
 
   void changeFavorite() {
     isFavorite = !isFavorite;
-    print('Меняю favorite: ${isFavorite}');
+    //print('Меняю favorite: ${isFavorite}');
   }
 
   void tempFunc() {

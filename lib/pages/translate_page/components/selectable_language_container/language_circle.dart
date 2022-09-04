@@ -10,7 +10,7 @@ class CircleLanguage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(35)),
-      //child: SvgPicture.asset('assets/$assetRoute', fit: BoxFit.cover),
+      //child: SvgPicture.asset('assets/$assetRoute'),
       child: Image.asset(assetRoute),
     );
   }

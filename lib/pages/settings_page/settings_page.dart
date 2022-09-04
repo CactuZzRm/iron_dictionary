@@ -12,18 +12,22 @@ class SettingsPage extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         SwitchThemeButton(buttonText: 'Тёмная тема'),
-        Divider(),
-        ElevatedButton(
-          onPressed: () {},
-          style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(Colors.transparent),
-            elevation: MaterialStateProperty.all(0),
-            padding: MaterialStateProperty.all(EdgeInsets.zero),
-          ),
-          child: Text(
-            'О нас',
-            style: theme.textTheme.headline3,
-            textAlign: TextAlign.left,
+        const SizedBox(height: 13),
+        const Divider(),
+        const SizedBox(height: 13), // ??? 20 - 7 = 13 (Определил на глаз)
+        InkWell(
+          onTap: () {},
+          child: Container(
+            width: double.infinity,
+            height: 61,
+            padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 25),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15),
+                color: theme.backgroundColor),
+            child: Align(
+              alignment: Alignment.centerLeft,
+              child: Text('О нас', style: theme.textTheme.headline3),
+            ),
           ),
         ),
       ],

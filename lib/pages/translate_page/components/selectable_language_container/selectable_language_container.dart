@@ -10,7 +10,7 @@ class SelectableLanguageContainer extends StatelessWidget {
     final theme = Theme.of(context);
     return Container(
       width: double.infinity,
-      margin: const EdgeInsets.symmetric(horizontal: 28),
+      //margin: const EdgeInsets.symmetric(horizontal: 28),
       padding: const EdgeInsets.only(top: 10, bottom: 10, left: 40, right: 19),
       decoration: BoxDecoration(
         color: theme.backgroundColor,

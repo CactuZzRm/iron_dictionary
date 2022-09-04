@@ -63,13 +63,13 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - Group.svg
     - Ossetia.svg
     - Ossetia.png
     - Russia.svg
     - Russia.png
     - Change.svg
     - Copy.svg
+    - Moon.svg
     - Volume.svg
     - Favorite.svg
     - InFavorite.svg
